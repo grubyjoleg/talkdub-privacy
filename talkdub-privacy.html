@@ -1,0 +1,95 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>TalkDub — Privacy Policy</title>
+<style>
+  * { margin: 0; padding: 0; box-sizing: border-box; }
+  body {
+    font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, sans-serif;
+    color: #1a1a2e; background: #fafafa; line-height: 1.7;
+    max-width: 720px; margin: 0 auto; padding: 40px 24px 80px;
+  }
+  h1 { font-size: 28px; font-weight: 700; margin-bottom: 8px; }
+  .updated { color: #666; font-size: 14px; margin-bottom: 32px; }
+  h2 { font-size: 18px; font-weight: 600; margin: 28px 0 10px; }
+  p { margin-bottom: 14px; }
+  ul { margin: 0 0 14px 24px; }
+  li { margin-bottom: 6px; }
+  a { color: #2563eb; }
+  .footer { margin-top: 48px; padding-top: 24px; border-top: 1px solid #e5e5e5; color: #888; font-size: 13px; }
+</style>
+</head>
+<body>
+
+<h1>Privacy Policy</h1>
+<p class="updated">Last updated: July 2026</p>
+
+<p>TalkDub ("we", "our", "the extension") is a Chrome browser extension that translates and voices over YouTube video subtitles. This policy describes what data we collect and how we use it.</p>
+
+<h2>Data We Collect</h2>
+
+<p><strong>Device fingerprint.</strong> We generate a non-reversible hash based on your browser and hardware characteristics (screen size, timezone, user agent). This hash is used solely for license verification and trial abuse prevention. We do not store your raw device information — only the hash.</p>
+
+<p><strong>License key.</strong> If you purchase a PRO subscription, your Gumroad license key is stored locally in your browser and sent to our server to verify your subscription status.</p>
+
+<p><strong>Subtitle text.</strong> When translating video subtitles, the text is sent to our translation server (Cloudflare Workers) and to Google Translate. Translated text may be cached on our server to improve performance for future users watching the same video. No personally identifiable information is attached to cached translations.</p>
+
+<p><strong>TTS audio.</strong> Translated text is sent to Microsoft Azure Text-to-Speech to generate voice audio. Generated audio is cached on our server (Cloudflare R2) to avoid repeated generation of the same phrases.</p>
+
+<h2>Data We Do NOT Collect</h2>
+
+<ul>
+  <li>We do not collect your name, email, or any personal contact information</li>
+  <li>We do not track which videos you watch</li>
+  <li>We do not collect browsing history</li>
+  <li>We do not use cookies or tracking pixels</li>
+  <li>We do not sell, share, or transfer any data to third parties for advertising</li>
+  <li>We do not collect data for creditworthiness or lending purposes</li>
+</ul>
+
+<h2>Local Storage</h2>
+
+<p>The extension stores the following data locally in your browser using Chrome's storage API:</p>
+<ul>
+  <li>Your language preference (Russian or Ukrainian)</li>
+  <li>Voice and volume settings</li>
+  <li>License key (if entered)</li>
+  <li>Device fingerprint hash</li>
+  <li>Enable/disable state</li>
+</ul>
+<p>This data never leaves your device except for the license key and fingerprint hash, which are sent to our server for subscription verification.</p>
+
+<h2>Third-Party Services</h2>
+
+<ul>
+  <li><strong>Google Translate API</strong> — for subtitle translation (free mode)</li>
+  <li><strong>Microsoft Azure Cognitive Services</strong> — for neural text-to-speech (PRO mode)</li>
+  <li><strong>Gumroad</strong> — for payment processing and license verification</li>
+  <li><strong>Cloudflare</strong> — for hosting our backend API</li>
+</ul>
+<p>Each service has its own privacy policy. We send the minimum data necessary for each service to function.</p>
+
+<h2>Data Retention</h2>
+
+<p>Translation cache: up to 90 days. TTS audio cache: indefinitely (audio files contain no personal data). Trial usage data: up to 90 days. Gumroad license verification cache: 24 hours.</p>
+
+<h2>Children's Privacy</h2>
+
+<p>TalkDub is not directed at children under 13. We do not knowingly collect data from children.</p>
+
+<h2>Changes to This Policy</h2>
+
+<p>We may update this policy from time to time. The "last updated" date at the top will reflect the most recent revision.</p>
+
+<h2>Contact</h2>
+
+<p>If you have questions about this privacy policy, contact us at: <strong>support@cameofx.com</strong></p>
+
+<div class="footer">
+  TalkDub is developed by Cameo FX · Dnipro, Ukraine
+</div>
+
+</body>
+</html>
